@@ -1,0 +1,19 @@
+services:
+  api:
+    image: api-games
+    ports:
+    - "8080:8080"
+    depends_on:
+    - mysql
+  mysql:
+    image: mysql:8
+    environment:
+      MYSQL_ROOT_PASSWORD: 1234
+      MYSQL_DATABASE: api_games
+    ports:
+    - "3306:3306"
+    volumes:
+    - games-volume-data:/var/lib/mysql
+
+volumes:
+  games-volume-data:
