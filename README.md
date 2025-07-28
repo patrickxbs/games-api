@@ -13,8 +13,7 @@ e para a transferencia de dados foi utilizado Data Transfer Object (DTO). O proj
 - Spring Data JPA
 - MySQL
 - Swagger (OpenAPI)
-- Docker (opcional)
-- Lombok
+- Docker
 - DTOs (Data Transfer Object)
 
 ## Documentação Swagger
